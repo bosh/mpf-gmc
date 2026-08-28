@@ -130,9 +130,9 @@ func _find_target():
 			base = MPF.game.settings
 		VariableType.EVENT_ARG:
 			base = null
-		VariableType.PLAYER_1,
-		VariableType.PLAYER_2,
-		VariableType.PLAYER_3,
+		VariableType.PLAYER_1, \
+		VariableType.PLAYER_2, \
+		VariableType.PLAYER_3, \
 		VariableType.PLAYER_4:
 			base = _get_player_by_type(self.variable_type)
 		VariableType.ACTIVE_SLIDE:
