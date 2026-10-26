@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://k06kokgbf56c"]
+[gd_scene format=3 uid="uid://k06kokgbf56c"]
 
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_gc685"]
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_tuxrv"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_gc685"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_tuxrv"]
 
-[node name="Tilt" type="Control"]
+[node name="Tilt" type="Control" unique_id=846489503]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,13 +12,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gc685")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2099272271]
 layout_mode = 0
 offset_right = 2880.0
 offset_bottom = 864.0
 color = Color(0, 0, 0, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1471535653]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -32,7 +32,7 @@ offset_bottom = 137.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MPFVariable - Text" type="Label" parent="CenterContainer"]
+[node name="MPFVariable - Text" type="Label" parent="CenterContainer" unique_id=1377259769]
 layout_mode = 2
 theme_override_font_sizes/font_size = 250
 text = "TILT"

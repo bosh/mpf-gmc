@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://fcdwlg4u44ft"]
+[gd_scene format=3 uid="uid://fcdwlg4u44ft"]
 
-[ext_resource type="Script" uid="uid://6mdcui7wkc47" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8uavx"]
-[ext_resource type="Script" uid="uid://cm7sg7wq6hq8s" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_8uavx"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8uavx"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_8uavx"]
 
-[node name="HighScoreAward" type="Control"]
+[node name="HighScoreAward" type="Control" unique_id=139865871]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_8uavx")
 
-[node name="MPFVariable - Award" type="Label" parent="."]
+[node name="MPFVariable - Award" type="Label" parent="." unique_id=219764810]
 layout_mode = 0
 offset_left = 236.0
 offset_top = -11.0
@@ -20,9 +20,8 @@ horizontal_alignment = 1
 script = ExtResource("2_8uavx")
 variable_type = 1
 variable_name = "award"
-metadata/_custom_type_script = "uid://cm7sg7wq6hq8s"
 
-[node name="MPFVariable - Player Name" type="Label" parent="."]
+[node name="MPFVariable - Player Name" type="Label" parent="." unique_id=671833621]
 layout_mode = 0
 offset_left = 236.0
 offset_top = 187.0
@@ -34,9 +33,8 @@ horizontal_alignment = 1
 script = ExtResource("2_8uavx")
 variable_type = 1
 variable_name = "player_name"
-metadata/_custom_type_script = "uid://cm7sg7wq6hq8s"
 
-[node name="MPFVariable - Value" type="Label" parent="."]
+[node name="MPFVariable - Value" type="Label" parent="." unique_id=1760332365]
 layout_mode = 0
 offset_left = 225.0
 offset_top = 390.0
@@ -49,4 +47,3 @@ script = ExtResource("2_8uavx")
 variable_type = 1
 variable_name = "value"
 comma_separate = true
-metadata/_custom_type_script = "uid://cm7sg7wq6hq8s"

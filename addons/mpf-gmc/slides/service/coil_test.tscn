@@ -1,31 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://bht1yxmyw4hmq"]
+[gd_scene format=3 uid="uid://bht1yxmyw4hmq"]
 
-[ext_resource type="Script" path="res://addons/mpf-gmc/slides/service/coil_test.gd" id="1"]
+[ext_resource type="Script" uid="uid://cryxyyeejxeh" path="res://addons/mpf-gmc/slides/service/coil_test.gd" id="1"]
 
-[node name="coil_test" type="VBoxContainer"]
+[node name="coil_test" type="VBoxContainer" unique_id=1980162217]
 focus_mode = 2
 script = ExtResource("1")
 device_type = "coils"
 
-[node name="title" type="Label" parent="."]
+[node name="title" type="Label" parent="." unique_id=97725841]
 layout_mode = 2
 text = "Coil Test (DANGER!)"
 
-[node name="coil_label" type="Label" parent="."]
+[node name="coil_label" type="Label" parent="." unique_id=1677397912]
 layout_mode = 2
 text = "Coil:"
 
-[node name="coil_number" type="Label" parent="."]
+[node name="coil_number" type="Label" parent="." unique_id=151824056]
 layout_mode = 2
 text = "Address:"
 
-[node name="instructions" type="Label" parent="."]
+[node name="instructions" type="Label" parent="." unique_id=1652770327]
 layout_mode = 2
 text = "Press the select button to pulse"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=236731631]
 layout_mode = 2
 follow_focus = true
 
-[node name="coil_list" type="VBoxContainer" parent="ScrollContainer"]
+[node name="coil_list" type="VBoxContainer" parent="ScrollContainer" unique_id=1890005535]
 layout_mode = 2
