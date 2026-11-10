@@ -1,5 +1,16 @@
 # MPF-GMC Changelog
 
+## 1.1.0
+*TBD 2026*
+
+### New Features
+
+Added pip distribution and small python console scripts
+
+### Bug Fixes
+* Various service menu fixes
+
+
 ## 1.0.0
 *25 April 2026*
 
