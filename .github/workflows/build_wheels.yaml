@@ -1,0 +1,35 @@
+name: Wheel Builder
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build_wheels:
+    name: Push new release to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/mpf
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Checkout MPF-GMC
+        uses: actions/checkout@v6
+
+      - name: Setup python
+        uses: actions/setup-python@v6
+        with:
+          python-version: 3.14
+
+      - name: Build wheel
+        run: python -m build
+
+      - uses: actions/upload-artifact@v7
+        with:
+          path: ./dist/*.*
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1

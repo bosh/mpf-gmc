@@ -26,6 +26,17 @@ With the Godot MC, pinball creators using MPF can choose Godot as their display 
 
 Full installation guides and documentation are available at https://missionpinball.org/gmc/
 
+## Command-Line Interface (CLI) Usage
+
+Install with pip, with `pip install mpf-gmc`.
+
+Run `mpf-gmc` from your project's root directory:
+
+* `mpf-gmc`: Runs health checks and diagnostics.
+* `mpf-gmc init`: Connect GMC library to MPF game folder. Symlink by default, or `-c` for hard copy. `-f` to overwrite.
+* `mpf-gmc config`: Saves local environment configurations, such as `--godot PATH` (`-g`) to specify your local Godot binary path.
+* `mpf-gmc run`: Launches the standalone Godot MPF-GMC process for the game.
+
 # Contributing
 
 User contributions are welcome!

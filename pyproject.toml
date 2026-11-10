@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mpf-gmc"
+version = "1.1.0"
+authors = [
+    { name = "MPF Maintainer", email = "maintainer@missionpinball.org" }
+]
+description = "Management CLI and component engine for the Mission Pinball Framework Godot Media Controller (GMC)"
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools"
+]
+dependencies = [
+    "mpf>=0.82.0.dev0, <0.83.0"
+]
+
+[project.scripts]
+mpf-gmc = "mpf_gmc_cli.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["addons/mpf-gmc/**/*"]
